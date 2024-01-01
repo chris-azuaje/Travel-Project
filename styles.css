@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+:root {
+  --soft-yellow: #f0f3bd;
+  --strong-cyan: #02c39a;
+  --dark-cyan: #00a896;
+  --darker-cyan: #028090;
+  --dark-blue: #05668d;
+}
+
+body {
+  background-color: var(--soft-yellow);
+}
+
+.header {
+  margin: 20px 80px;
+  font-size: 20px;
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+#img {
+  width: 100%;
+  height: 60px;
+  background-color: var(--dark-blue);
+}
+
+#card:hover {
+  cursor: pointer;
+}
+
+#title {
+  text-align: center;
+}
